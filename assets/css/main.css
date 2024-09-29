@@ -109,6 +109,7 @@ input, select, textarea {
 	height: 250px;
 	margin-right: 50px;
 	margin-bottom: 50px;
+	max-width: 100%;
 }
 
 .section3-image {
@@ -117,6 +118,7 @@ input, select, textarea {
 	height: 250px;
 	margin-left: 50px;
 	margin-bottom: 50px;
+	max-width: 100%;
 }
 
 .section5-image {
@@ -125,6 +127,7 @@ input, select, textarea {
 	margin-right: 50px;
 	margin-bottom: 50px;
 	margin-top: 80px;
+	max-width: 100%;
 }
 
 .project-section-p {
@@ -278,7 +281,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.3)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.1)), url("../../images/bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
