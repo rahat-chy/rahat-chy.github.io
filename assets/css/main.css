@@ -101,6 +101,7 @@ input, select, textarea {
 	height: 300px;
 	margin-left: 50px;
 	margin-bottom: 50px;
+	max-width: 100%;
 }
 
 .section2-image {
