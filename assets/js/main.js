@@ -143,3 +143,21 @@
 			});
 
 })(jQuery);
+
+const animation_elements = document.querySelectorAll('.float-left-animation, .float-right-animation, .float-up-animation, .fade-in-animation');
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('animate');
+		} 
+	})
+}, {
+	threshold: 0.4
+});
+
+for (let i = 0; i < animation_elements.length; i++) {
+	const el = animation_elements[i];
+
+	observer.observe(el);
+}
