@@ -171,11 +171,23 @@ input, select, textarea {
 	transition-delay: 0.2s;
 }
 
+.fade-in-animation-without-scroll {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
 .float-up-animation {
 	opacity: 0;
 	transform: translate(0, 50px);
 	transition: all 1s ease-out;
 	transition-delay: 0.2s;
+}
+
+.float-up-animation-without-scroll {
+	animation: floatUp ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .float-right-animation {
@@ -185,11 +197,23 @@ input, select, textarea {
 	transition-delay: 0.2s;
 }
 
+.float-right-animation-without-scroll {
+	animation: floatRight ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
 .float-left-animation {
 	opacity: 0;
 	transform: translate(100px, 0);
 	transition: all 1s ease-out;
 	transition-delay: 0.2s;
+}
+
+.float-left-animation-without-scroll {
+	animation: floatLeft ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 .animate {
@@ -253,6 +277,72 @@ input, select, textarea {
 	}
   }
 
+  @media (max-width: 600px) {
+	/* Styles for small phones */
+	.section1-image {
+		margin-left: 0px;
+	}
+
+	.aust-text {
+		width: 290px;
+		margin-right: 45px;
+	}
+
+	.se-text {
+		width: 278px;
+	}
+
+	.special {
+		width: 141px;
+	}
+
+	.section3-image {
+		margin-left: 0px;
+	}
+	
+	.about-me-wrapper {
+		margin-bottom: 100px !important;
+	}
+
+	.header-menu {
+		margin-right: 0px;
+	}
+
+	.achievements-section {
+		margin: 170px 15px 100px 15px !important;
+	}
+
+	.achievement-image {
+		margin-top: 0px !important;
+		margin-left: 30px;
+		margin-bottom: 0px;
+	}
+
+	.achievement-quote {
+		text-align: left;
+	}
+
+	.experience-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+  }
+
+  @media (max-width: 900px) {
+	/* Styles for small phones */
+	
+	.about-me-wrapper {
+		margin-bottom: 200px !important;
+	}
+
+	.header-menu {
+		margin-right: 0px;
+	}
+
+	.experience-section {
+		margin: 200px 15px 200px 15px !important;
+	}
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -281,7 +371,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.1)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
