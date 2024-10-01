@@ -284,8 +284,7 @@ input, select, textarea {
 	}
 
 	.aust-text {
-		width: 290px;
-		margin-right: 45px;
+		width: 96%;
 	}
 
 	.se-text {
@@ -364,7 +363,7 @@ input, select, textarea {
 	}
   }
 
-  @media (max-width: 900px) {
+  @media (min-width: 601px) and (max-width: 1000px) {
 	/* Styles for small phones */
 	
 	.about-me-wrapper {
@@ -402,6 +401,18 @@ input, select, textarea {
 	.project-images {
 		height: 330px !important;
 		width: 100% !important;
+	}
+
+	.about-me-learn-more {
+		margin-right: 0px !important;
+	}
+
+	.aust-text {
+		width: 96%;
+	}
+
+	.se-text {
+		width: 92%;
 	}
   }
 
