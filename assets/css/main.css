@@ -289,7 +289,7 @@ input, select, textarea {
 	}
 
 	.se-text {
-		width: 278px;
+		width: 92%;
 	}
 
 	.special {
@@ -325,6 +325,43 @@ input, select, textarea {
 	.experience-section {
 		margin: 200px 15px 100px 15px !important;
 	}
+
+	.cp-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+
+	.oj-divs {
+		margin-top: 20px !important;
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+
+	.oj-learn-more {
+		margin-top: 30px !important;
+		margin-left: 15px !important;
+		width: 100% !important;
+	}
+
+	.oj-elements {
+		margin-left: -30px !important;
+	}
+
+	.oj-learn-more-a {
+		width: 100% !important;
+	}
+
+	.project-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+
+	.project-div-width {
+		width: 19% !important;
+	}
+
+	.project-images {
+		height: 330px !important;
+		width: 100% !important;
+	}
   }
 
   @media (max-width: 900px) {
@@ -340,6 +377,31 @@ input, select, textarea {
 
 	.experience-section {
 		margin: 200px 15px 200px 15px !important;
+	}
+
+	.oj-divs {
+		margin-top: 20px !important;
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+
+	.oj-learn-more {
+		margin-top: 30px !important;
+		margin-left: 15px !important;
+		width: 100% !important;
+	}
+
+	.project-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+
+	.project-div-width {
+		width: 55% !important;
+	}
+
+	.project-images {
+		height: 330px !important;
+		width: 100% !important;
 	}
   }
 
