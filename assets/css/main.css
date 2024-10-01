@@ -424,6 +424,67 @@ input, select, textarea {
 	}
   }
 
+  @media (min-width: 1001px) and (max-width: 1500px) {
+	/* Styles for small phones */
+	
+	.about-me-wrapper {
+		margin-bottom: 200px !important;
+	}
+
+	.header-menu {
+		margin-right: 0px;
+	}
+
+	.experience-section {
+		margin: 200px 15px 200px 15px !important;
+	}
+
+	.oj-divs {
+		margin-top: 20px !important;
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+
+	.oj-learn-more {
+		margin-top: 30px !important;
+		margin-left: 15px !important;
+		width: 100% !important;
+	}
+
+	.project-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+
+	.project-div-width {
+		width: 65% !important;
+	}
+
+	.project-images {
+		height: 330px !important;
+		width: 100% !important;
+	}
+
+	.about-me-learn-more {
+		margin-right: 0px !important;
+	}
+
+	.aust-text {
+		width: 96%;
+	}
+
+	.se-text {
+		width: 92%;
+	}
+
+	.achievements-section {
+		margin: 170px 15px 100px 15px !important;
+	}
+
+	.cp-section {
+		margin: 200px 15px 100px 15px !important;
+	}
+  }
+
 /* Basic */
 
 	@-ms-viewport {
