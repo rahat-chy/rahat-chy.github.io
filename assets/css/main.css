@@ -363,7 +363,7 @@ input, select, textarea {
 	}
   }
 
-  @media (min-width: 451px) and (max-width: 1400px) {
+  @media (min-width: 451px) and (max-width: 1000px) {
 	/* Styles for small phones */
 	
 	.about-me-wrapper {
@@ -395,7 +395,7 @@ input, select, textarea {
 	}
 
 	.project-div-width {
-		width: 55% !important;
+		width: 45% !important;
 	}
 
 	.project-images {
@@ -413,6 +413,14 @@ input, select, textarea {
 
 	.se-text {
 		width: 92%;
+	}
+
+	.achievements-section {
+		margin: 170px 15px 100px 15px !important;
+	}
+
+	.cp-section {
+		margin: 200px 15px 100px 15px !important;
 	}
   }
 
