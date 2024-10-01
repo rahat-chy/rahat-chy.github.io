@@ -277,7 +277,7 @@ input, select, textarea {
 	}
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 450px) {
 	/* Styles for small phones */
 	.section1-image {
 		margin-left: 0px;
@@ -363,7 +363,7 @@ input, select, textarea {
 	}
   }
 
-  @media (min-width: 601px) and (max-width: 1000px) {
+  @media (min-width: 451px) and (max-width: 1000px) {
 	/* Styles for small phones */
 	
 	.about-me-wrapper {
