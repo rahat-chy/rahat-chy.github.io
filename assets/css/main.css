@@ -363,7 +363,7 @@ input, select, textarea {
 	}
   }
 
-  @media (min-width: 451px) and (max-width: 1000px) {
+  @media (min-width: 451px) and (max-width: 1400px) {
 	/* Styles for small phones */
 	
 	.about-me-wrapper {
