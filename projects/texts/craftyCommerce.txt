@@ -1,0 +1,4 @@
+Crafty Commerce is a user-friendly e-commerce site where
+one can find and buy exquisite products.<br><br>
+                                                    
+This is developed using HTML, CSS, JavaScript, PHP, Bootstrap.   

@@ -176,3 +176,73 @@ for (let i = 0; i < animation_elements.length; i++) {
 
 	observer.observe(el);
 }
+
+const projects = [
+    {
+        title: "E-MART",
+        descriptionFile: "projects/texts/emart.txt",
+        image: "projects/images/emart.png",
+        sourceLink: "https://github.com/rahat-chy/EMart"
+    },
+	{
+        title: "ADMISSION HUB",
+        descriptionFile: "projects/texts/admissionHub.txt",
+        image: "projects/images/admissionHub.png",
+        sourceLink: "https://github.com/Kamrozzaman/AdmissionHub"
+    },
+	{
+        title: "CRAFTY COMMERCE",
+        descriptionFile: "projects/texts/craftyCommerce.txt",
+        image: "projects/images/craftyCommerce.png",
+        sourceLink: "https://github.com/rahat-chy/Crafty-Commerce"
+    },
+	{
+        title: "BIBLIOTHECA",
+        descriptionFile: "projects/texts/bibliotheca.txt",
+        image: "projects/images/bibliotheca.png",
+        sourceLink: "https://github.com/rahat-chy/Bibliotheca"
+    },
+	{
+        title: "COVID-19 HELPLINE",
+        descriptionFile: "projects/texts/covid19Helpline.txt",
+        image: "projects/images/covid19Helpline.png",
+        sourceLink: "https://github.com/rahat-chy/Covid19-Helpline"
+    },
+	{
+        title: "UNIVERSE OF BATTLE",
+        descriptionFile: "projects/texts/universeOfBattle.txt",
+        image: "projects/images/universeOfBattle.png",
+        sourceLink: "https://github.com/rahat-chy/Universe-Of-Battle-"
+    }
+];
+
+const projectsContainer = document.getElementById("project-container");
+
+projects.forEach(project => {
+    const projectBlock = document.createElement("div");
+
+    projectBlock.innerHTML = `
+		<div class="row fade-in-animation-without-scroll">
+			<div class="col-md-4 projects-sections">
+				<img src="${project.image}" style="height: 300px; width: 480px;" class="project-images" />
+			</div>
+			<div class="col-md-8 projects-sections">
+				<h3 class="major">${project.title}</h3>
+				<p class="project-section-p" id="${project.title}-description">Loading description...</p>
+				<a href="${project.sourceLink}" class="special oj-learn-more-a" target="_blank">Source Code</a>
+			</div>
+		</div>
+    `;
+
+    projectsContainer.appendChild(projectBlock);
+
+    fetch(project.descriptionFile)
+        .then(response => response.text())
+        .then(description => {
+            document.getElementById(`${project.title}-description`).innerHTML = description;
+        })
+        .catch(error => {
+            console.error(`Error fetching description for ${project.title}:`, error);
+            document.getElementById(`${project.title}-description`).innerHTML = "Description not available.";
+        });
+});

@@ -1,0 +1,5 @@
+The aim of this android app is to help the university admission
+seekers by providing all the information related to admission. A preparation guideline will also be available for the admission test.
+There will be a notification system to notify the user about the important dates of his desired university<br><br>
+                                                    
+It was developed in android studio using JAVA for Android 4.4(Kitkat).      

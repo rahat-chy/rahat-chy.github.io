@@ -1,0 +1,9 @@
+It was developed to help mass people by providing COVID-19
+emergency services and information.<br><br>
+Goal of this project was to help people by providing information and services at emergency moment. By this project, we tried to
+provide all the important information like Plasma,Oxygen,Doctor,ICU and Ambulance at one platform related
+ to COVID-19. At emergency moments people become more helpless and can not set their immediate action to
+perform without proper information. Many lives can be saved by taking proper initiatives at the right time. We
+wanted to perform that duty by providing correct information and contribute to overcome this pandemic
+situation.<br><br>
+It was developed on Netbeans using Java and MySQL database. It will help mass people by providing COVID-19 emergency services and information.  
