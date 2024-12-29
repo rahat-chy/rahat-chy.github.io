@@ -218,31 +218,75 @@ const projects = [
 
 const projectsContainer = document.getElementById("project-container");
 
-projects.forEach(project => {
-    const projectBlock = document.createElement("div");
+if(projectsContainer) {
+	projects.forEach(project => {
+		const projectBlock = document.createElement("div");
 
-    projectBlock.innerHTML = `
-		<div class="row fade-in-animation-without-scroll">
-			<div class="col-md-4 projects-sections">
-				<img src="${project.image}" style="height: 300px; width: 480px;" class="project-images" />
+		projectBlock.innerHTML = `
+			<div class="row fade-in-animation-without-scroll">
+				<div class="col-md-4 projects-sections">
+					<img src="${project.image}" style="height: 300px; width: 480px;" class="project-images" />
+				</div>
+				<div class="col-md-8 projects-sections">
+					<h3 class="major">${project.title}</h3>
+					<p class="project-section-p" id="${project.title}-description">Loading description...</p>
+					<a href="${project.sourceLink}" class="special oj-learn-more-a" target="_blank">Source Code</a>
+				</div>
 			</div>
-			<div class="col-md-8 projects-sections">
-				<h3 class="major">${project.title}</h3>
-				<p class="project-section-p" id="${project.title}-description">Loading description...</p>
-				<a href="${project.sourceLink}" class="special oj-learn-more-a" target="_blank">Source Code</a>
+		`;
+
+		projectsContainer.appendChild(projectBlock);
+
+		fetch(project.descriptionFile)
+			.then(response => response.text())
+			.then(description => {
+				document.getElementById(`${project.title}-description`).innerHTML = description;
+			})
+			.catch(error => {
+				console.error(`Error fetching description for ${project.title}:`, error);
+				document.getElementById(`${project.title}-description`).innerHTML = "Description not available.";
+			});
+	});
+}
+
+const blogs = [
+    {
+        title: "Software Design Principles — Part 1 (DRY, KISS, YAGNI)",
+        descriptionFile: "blogs/texts/Software Design Principles — Part 1 (DRY, KISS, YAGNI).txt",
+        image: "blogs/images/Software Design Principles — Part 1 (DRY, KISS, YAGNI).png",
+        sourceLink: "https://medium.com/@rht345/software-design-principles-part-1-dry-kiss-yagni-010c810ef140"
+    }
+];
+
+const blogsContainer = document.getElementById("blog-container");
+
+if(blogsContainer) {
+	blogs.forEach(blog => {
+		const blogBlock = document.createElement("div");
+
+		blogBlock.innerHTML = `
+			<div class="row fade-in-animation-without-scroll">
+				<div class="col-md-4 projects-sections">
+					<img src="${blog.image}" style="height: 300px; width: 480px;" class="project-images" />
+				</div>
+				<div class="col-md-8 projects-sections">
+					<h3 class="major">${blog.title}</h3>
+					<p class="project-section-p" id="${blog.title}-description">Loading description...</p>
+					<a href="${blog.sourceLink}" class="special oj-learn-more-a" target="_blank">Read Full Blog</a>
+				</div>
 			</div>
-		</div>
-    `;
+		`;
 
-    projectsContainer.appendChild(projectBlock);
+		blogsContainer.appendChild(blogBlock);
 
-    fetch(project.descriptionFile)
-        .then(response => response.text())
-        .then(description => {
-            document.getElementById(`${project.title}-description`).innerHTML = description;
-        })
-        .catch(error => {
-            console.error(`Error fetching description for ${project.title}:`, error);
-            document.getElementById(`${project.title}-description`).innerHTML = "Description not available.";
-        });
-});
+		fetch(blog.descriptionFile)
+			.then(response => response.text())
+			.then(description => {
+				document.getElementById(`${blog.title}-description`).innerHTML = description;
+			})
+			.catch(error => {
+				console.error(`Error fetching description for ${blog.title}:`, error);
+				document.getElementById(`${blog.title}-description`).innerHTML = "Description not available.";
+			});
+	});
+}
