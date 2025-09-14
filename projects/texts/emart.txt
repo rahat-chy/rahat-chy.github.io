@@ -1,6 +1,5 @@
 This is an online marketplace where users can buy their cherished products
-like Gadgets,Books,Groceries,Electronics items etc. The users will also be able to send beautiful gifts to their
-dear ones. The Vendors can join us by free registration to sell their attractive products. Admins of the platform will
+like Gadgets,Books,Groceries,Electronics items etc. The Vendors can join us by free registration to sell their attractive products. Admins of the platform will
 look after every activity of the users and vendors. They will preserve all rights to maintain integrity of the
 platform.<br><br>
                                                     
