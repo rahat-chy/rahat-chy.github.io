@@ -255,6 +255,12 @@ const blogs = [
         descriptionFile: "blogs/texts/Software Design Principles — Part 1 (DRY, KISS, YAGNI).txt",
         image: "blogs/images/Software Design Principles — Part 1 (DRY, KISS, YAGNI).png",
         sourceLink: "https://medium.com/@rht345/software-design-principles-part-1-dry-kiss-yagni-010c810ef140"
+    },
+	{
+        title: "Software Design Principles - Part 2 (SOLID)",
+        descriptionFile: "blogs/texts/Software Design Principles - Part 2 (SOLID).txt",
+        image: "blogs/images/Software Design Principles - Part 2 (SOLID).png",
+        sourceLink: "https://medium.com/@rht345/software-design-principles-part-2-solid-0d2298a2d8e7"
     }
 ];
 
@@ -266,8 +272,8 @@ if(blogsContainer) {
 
 		blogBlock.innerHTML = `
 			<div class="row fade-in-animation-without-scroll">
-				<div class="col-md-4 projects-sections">
-					<img src="${blog.image}" style="height: 300px; width: 480px;" class="project-images" />
+				<div class="col-md-4 projects-sections" style="margin-top: 0px">
+					<img src="${blog.image}" style="height: 300px; width: 100%;" class="project-images" />
 				</div>
 				<div class="col-md-8 projects-sections">
 					<h3 class="major">${blog.title}</h3>
